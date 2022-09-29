@@ -89,3 +89,5 @@ var swiper2 = new Swiper(".card_newthing", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+let xxxxxx = document.querySelector("dropdown-1");
