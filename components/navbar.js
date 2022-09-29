@@ -44,18 +44,19 @@ function navbar() {
     </div>
     <div id="blackbar">
       <ul>
-        <li id="dropdown1">New</li>
-        <li id="dropdown2">Brands</li>
-        <li id="dropdown3">Makeup</li>
-        <li id="dropdown4">Skincare</li>
-        <li id="dropdown5">Hair</li>
-        <li id="dropdown6">Fragrance</li>
-        <li id="dropdown7">Tools & Brushes</li>
-        <li id="dropdown8">Bath & Body</li>
-        <li id="dropdown9">Mini Size</li>
-        <li id="dropdown10">Gifts</li>
-        <li id="dropdown11">Beauty Under 20$</li>
-        <li id="dropdown12">Sale & Offers</li>
+
+        <li id='dropdown1'>New</li>
+        <li id='dropdown2'>Brands</li>
+        <li id='dropdown3'>Makeup</li>
+        <li id='dropdown4'>Skincare</li>
+        <li id='dropdown5'>Hair</li>
+        <li id='dropdown6'>Fragrance</li>
+        <li id='dropdown7'>Tools & Brushes</li>
+        <li id='dropdown8'>Bath & Body</li>
+        <li id='dropdown9'>Mini Size</li>
+        <li id='dropdown10'>Gifts</li>
+        <li id='dropdown11'>Beauty Under 20$</li>
+        <li id='dropdown12'>Sale & Offers</li>
       </ul>
     </div>
     <div class="sipopup" id="sipopup-1">
@@ -100,10 +101,7 @@ function navbar() {
           <b>NOTE:</b>Enter your birthdate to receive a free gift every year.
         </p>
         <input type="date" />
-        <input
-          type="Number"
-          placeholder="ZIP Code(to hear about store events near you)"
-        />
+        
         <input type="text" id="desc" placeholder="Description" />
         <button id="signUpButton">Join Now</button>
       </div>
