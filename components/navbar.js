@@ -44,6 +44,7 @@ function navbar() {
     </div>
     <div id="blackbar">
       <ul>
+
         <li id='dropdown1'>New</li>
         <li id='dropdown2'>Brands</li>
         <li id='dropdown3'>Makeup</li>
