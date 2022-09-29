@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/sipopup.css" />
+    <link rel="stylesheet" href="styles/supopup.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <!-- swiper css -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <section class="slider_container">
+      <div class="container">
+        <div class="swiper card_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div id="abc" class="img_box">
+                <img
+                  src="https://www.sephora.com/contentimages/homepage/092022/Homepage/RWD/2022-09-23-hp-slide-slotting-clean-makeup-us-rwd-slice.jpeg?imwidth=1096"
+                  alt=""
+                />
+                <div>
+                  <h2>Can't-Miss New Clean Beauty</h2>
+                  <p>Picks you'll love, minus ingredients you might not.</p>
+
+                  <p><b>SHOP NOW</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="def" class="img_box">
+                <img
+                  src="https://www.sephora.com/contentimages/homepage/092022/Homepage/RWD/2022-09-21-hp-slideshow-banner-sept-holiday-preview-value-sets-us-rwd-slice.jpeg?imwidth=632"
+                  alt=""
+                />
+                <div>
+                  <h2>Holiday Sets Just Landed</h2>
+                  <p>The most-wanted beauty gifts are here.</p>
+
+                  <p><b>SHOP NOW</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="ghi" class="img_box">
+                <img
+                  src="https://www.sephora.com/contentimages/homepage/091322/Homepage/RWD/2022-09-18-hp-slide-bestsellers-v2-sept-us-ca-rwd-slice.jpeg?imwidth=632"
+                  alt=""
+                />
+                <div>
+                  <h2>Bestselling Beauty</h2>
+                  <p>These fan-favorites are worth the hype.</p>
+
+                  <p><b>SHOP NOW</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="klm" class="img_box">
+                <img
+                  src="https://www.sephora.com/contentimages/homepage/091322/Homepage/RWD/2022-09-14-hp-slide-just-arrived-us-rwd-slice.jpeg?imwidth=632"
+                  alt=""
+                />
+                <div>
+                  <h2>The Latest Lineup</h2>
+                  <p>New beauty from the hottes brands</p>
+
+                  <p><b>SHOP NOW</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <div style="margin-top: 20px" id="swiper2">
+      <h2 style="margin-left: 40px">Chosen For You</h2>
+      <div id="swiper2_container"></div>
+    </div>
+
+    <div class="justDroppedHeader">
+      <h2>Just Dropped</h2>
+      <a href="">Show More</a>
+    </div>
+
+    <!-- <div id="carousel"></div> -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="carousel-Item" class="justDroppedContainer active">
+            <!-- <div class="leftAero">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                      </svg>
+                </div> -->
+
+            <div class="rightAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2625606-main-zoom.jpg?imwidth=160"
+                alt=""
+                class="justDroppedBoxImage"
+              />
+              <div class="justDroppedBoxContent">
+                <span>CLINIQUE</span>
+                <br />
+                <span>Shut Eye Essentials Set</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2612943-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Dyson</span>
+                <br />
+                <span>Special Edition Airwrap™ Multi-Styler Complete Long</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2605301-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Boy Smells</span>
+                <br />
+                <span>LES CANDLE</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2563773-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Sephora Collection</span>
+                <br />
+                <span>Total Coverage Sponge Set</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2613958-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Farmacy</span>
+                <br />
+                <span>Honey Haven Hydration Bestsellers Set</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2609543-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Lancome</span>
+                <br />
+                <span>Absolute The Serum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="carousel-Item" class="justDroppedContainer active">
+            <div class="leftAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+
+            <div class="rightAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2613966-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=160"
+                alt=""
+                class="justDroppedBoxImage"
+              />
+              <div class="justDroppedBoxContent">
+                <span>Farmacy</span>
+                <br />
+                <span>Holiday Party Green Clean Trio</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2306959-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Laura Mercier</span>
+                <br />
+                <span>Petal Soft Lipstic Cryon</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2407328-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Charlote Tilbury</span>
+                <br />
+                <span>Airbrush Flawless Finish Setting Powder</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2597680-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>PAT McGRATH LABS</span>
+                <br />
+                <span>Mothership X Eyeshadow Palette: Moonlit Seduction</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2597805-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Yves Saint Laurent</span>
+                <br />
+                <span>Rouge Pur Couture The Bold High Pigment Lipstick</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2594422-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Caliray</span>
+                <br />
+                <span>SO Blown Blurring Collagen Peptide Primer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="carousel-Item" class="justDroppedContainer active">
+            <div class="leftAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+
+            <!-- <div class="rightAero">
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                </div> -->
+
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2617389-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=160"
+                alt=""
+                class="justDroppedBoxImage"
+              />
+              <div class="justDroppedBoxContent">
+                <span>Kosas</span>
+                <br />
+                <span>Luminus Mate Beauty Plus</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2627172-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Freck Beauty</span>
+                <br />
+                <span>Best of Freck Holiday Set</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2592798-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Dae</span>
+                <br />
+                <span
+                  >Signature Shampoo, Conditioner & Prickly Pear Oil Hair
+                  Set</span
+                >
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2572485-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>HAUS LABS BY LADY GAGA</span>
+                <br />
+                <span>Power Sculpt Velvet Bronzer with Fermented Arnica</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2611887-main-zoom.jpg?imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>bareMinerals</span>
+                <br />
+                <span>Ready Set Celebrate Setting Powder Set</span>
+              </div>
+            </div>
+            <div class="justDroppedBox">
+              <img
+                src="https://www.sephora.com/productimages/sku/s2503969-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=160"
+                alt=""
+              />
+              <div class="justDroppedBoxContent">
+                <span>Briogio</span>
+                <br />
+                <span
+                  >Briogeo x Mikayla Vegan Apple Honey Deep Conditioning Hair
+                  Mask for Dry + Damaged Hair</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="justDroppedHeader">
+      <h2>Beauty Offers (14)</h2>
+      <a href="">View All</a>
+    </div>
+
+    <div
+      style="margin-bottom: 20px"
+      id="carouselExampleControl"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="crousel-Item">
+            <div class="rightAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-09-08-slotting-sc-promo-buy-x-get-y-site-beauty-offers-banner-1000x750-US-CA-handoff.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free Concealer Sample Test</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Try new and bestselling concealers from Charlotte Tilbury,
+                    NARS, HUDA BEAUTY, and more.
+                  </p></span
+                >
+                <p>Free with $35 purchase.*</p>
+                <p>Beauty Insider members only.</p>
+                <p>In store & online</p>
+                <p>Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-09-29-sept-luxe-skincare-mbc-site-desktop-mobile-beauty-offers-banner-1000x750-lamer.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Complimentary La Mer Sample Set</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>Get two ultra-hydrating trial sizes—a $62 value.</p></span
+                >
+                <p>Complimentary with $150 La Mer purchase.</p>
+                <p>Beauty Insider members only.</p>
+                <p>Online only Ends 10/27/2022</p>
+                <p>Exclusions/terms apply. While supplies last.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/bpme/September/2022-9-22-bi-sku-point-multiplier-desktop-mobile-beauty-offers-page-banner-4x-haus-labs.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Get 4X Points††</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>on ALL HAUS LABS BY LADY GAGA.</p></span
+                >
+                <!-- <p>Beauty Insider members only.</p> -->
+                <p>Beauty Insider members only.</p>
+                <p>Online only Ends 10/27/2022</p>
+                <p>
+                  ††Exclusions/terms apply. May be combined with other
+                  promotional offers.
+                </p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-sept-concealer-story-site-beauty-offers-banner-1000x750-sample-bag-promo-release.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free Concealer Sample Test</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Try new and bestselling concealers from Charlotte Tilbury,
+                    NARS, HUDA BEAUTY, and more.
+                  </p></span
+                >
+                <p>Free with $35 purchase.*</p>
+                <p>Beauty Insider members only.</p>
+                <p>In store & online</p>
+                <p>Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-9-1-amika-hydration-heroes-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free amika Trial Size</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Pick one of two game-changing hair masks for a major surge
+                    of moisture.
+                  </p></span
+                >
+                <p>Free with $25 purchase.**</p>
+                <p>Beauty Insider members only.</p>
+                <p>online Only</p>
+                <p>**Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="crousel-Item">
+            <div class="leftAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+
+            <div class="rightAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-fragrance-q3-site-beauty-offers-banner-1000x750-sample-set-us.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free Concealer Sample Test</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Try new and bestselling concealers from Charlotte Tilbury,
+                    NARS, HUDA BEAUTY, and more.
+                  </p></span
+                >
+                <p>Free with $35 purchase.*</p>
+                <p>Beauty Insider members only.</p>
+                <p>In store & online</p>
+                <p>Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-9-18-skincare-challenge-youth-to-the-people-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Complimentary La Mer Sample Set</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>Get two ultra-hydrating trial sizes—a $62 value.</p></span
+                >
+                <p>Complimentary with $150 La Mer purchase.</p>
+                <p>Beauty Insider members only.</p>
+                <p>Online only Ends 10/27/2022</p>
+                <p>Exclusions/terms apply. While supplies last.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-9-1-charlotte-tilbury-beautiful-skin-concealer-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Get 4X Points††</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>on ALL HAUS LABS BY LADY GAGA.</p></span
+                >
+                <!-- <p>Beauty Insider members only.</p> -->
+                <p>Beauty Insider members only.</p>
+                <p>Online only Ends 10/27/2022</p>
+                <p>
+                  ††Exclusions/terms apply. May be combined with other
+                  promotional offers.
+                </p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-sept-concealer-story-site-beauty-offers-banner-1000x750-sample-bag-promo-release.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free Concealer Sample Test</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Try new and bestselling concealers from Charlotte Tilbury,
+                    NARS, HUDA BEAUTY, and more.
+                  </p></span
+                >
+                <p>Free with $35 purchase.*</p>
+                <p>Beauty Insider members only.</p>
+                <p>In store & online</p>
+                <p>Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/June/2022-06-09-june-hair-treatment-mbc-site-beauty-offers-banner-1000x750-US.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free amika Trial Size</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Pick one of two game-changing hair masks for a major surge
+                    of moisture.
+                  </p></span
+                >
+                <p>Free with $25 purchase.**</p>
+                <p>Beauty Insider members only.</p>
+                <p>online Only</p>
+                <p>**Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="crousel-Item">
+            <div class="leftAero">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-sept-concealer-story-site-beauty-offers-banner-1000x750-sample-bag-promo-release.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free Concealer Sample Test</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Try new and bestselling concealers from Charlotte Tilbury,
+                    NARS, HUDA BEAUTY, and more.
+                  </p></span
+                >
+                <p>Free with $35 purchase.*</p>
+                <p>Beauty Insider members only.</p>
+                <p>In store & online</p>
+                <p>Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-09-29-sept-luxe-skincare-mbc-site-desktop-mobile-beauty-offers-banner-1000x750-lamer.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Complimentary La Mer Sample Set</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>Get two ultra-hydrating trial sizes—a $62 value.</p></span
+                >
+                <p>Complimentary with $150 La Mer purchase.</p>
+                <p>Beauty Insider members only.</p>
+                <p>Online only Ends 10/27/2022</p>
+                <p>Exclusions/terms apply. While supplies last.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/bpme/September/2022-9-22-bi-sku-point-multiplier-desktop-mobile-beauty-offers-page-banner-4x-haus-labs.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Get 4X Points††</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>on ALL HAUS LABS BY LADY GAGA.</p></span
+                >
+                <!-- <p>Beauty Insider members only.</p> -->
+                <p>Beauty Insider members only.</p>
+                <p>Online only Ends 10/27/2022</p>
+                <p>
+                  ††Exclusions/terms apply. May be combined with other
+                  promotional offers.
+                </p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/August/2022-8-23-jvn-complete-blowout-styling-milk-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free Concealer Sample Test</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Try new and bestselling concealers from Charlotte Tilbury,
+                    NARS, HUDA BEAUTY, and more.
+                  </p></span
+                >
+                <p>Free with $35 purchase.*</p>
+                <p>Beauty Insider members only.</p>
+                <p>In store & online</p>
+                <p>Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="beautyOffersBox">
+              <img
+                src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/September/2022-9-1-amika-hydration-heroes-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240"
+                alt=""
+              />
+              <div class="beautyoffersBoxInner">
+                <h3>Free amika Trial Size</h3>
+                <span class="beautyoffersBoxInnerFirstP"
+                  ><p>
+                    Pick one of two game-changing hair masks for a major surge
+                    of moisture.
+                  </p></span
+                >
+                <p>Free with $25 purchase.**</p>
+                <p>Beauty Insider members only.</p>
+                <p>online Only</p>
+                <p>**Exclusions/terms apply.</p>
+                <div class="beautyoffersBoxButton">
+                  <button class="apply">Apply</button>
+                  <button class="SeeDetails">See Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControl"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- <span class="visually-hidden">Previous</span> -->
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControl"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <!-- <span class="visually-hidden">Next</span> -->
+      </button>
+    </div>
+
+    <footer></footer>
+    <h1>I'm cool</h1>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<script type="module" src="./scripts/index.js"></script>
+<script src="./scripts/swiper2.js"></script>
+<script type="module" src="./scripts/footer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
