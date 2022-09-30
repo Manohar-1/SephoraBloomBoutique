@@ -58,6 +58,9 @@ document.querySelector(".suclose-btn").addEventListener("click", () => {
   document.querySelector(".container").style.opacity = "1";
   document.querySelector("#contentdd").style.opacity = "1";
   document.querySelector(".new_container").style.opacity = "1";
+
+  document.querySelector(".container3").style.opacity = "1";
+  document.querySelector(".container4").style.opacity = "1";
 });
 
 document.querySelector(".close-btn").addEventListener("click", function () {
