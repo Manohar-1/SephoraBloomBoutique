@@ -148,6 +148,9 @@ section {
 .swiper-slide > div > div > h2 {
   font-size: 24px;
 }
+.swiper-slide > div > div > p {
+  font-size: 15px;
+}
 
 #abc {
   background-color: #f7a691;
