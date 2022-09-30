@@ -1,3 +1,7 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
 .supopup .suoverlay {
   position: fixed;
   top: 0px;
