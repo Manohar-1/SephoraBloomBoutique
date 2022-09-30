@@ -7,11 +7,12 @@ body {
   position: absolute;
   top: 150px;
   width: 100%;
-  border: 0px solid red;
-  height: 400px;
+  border: 1px solid black;
+  height: auto;
   z-index: 2;
   background-color: white;
   display: none;
+  margin: auto;
 }
 
 #contentdd li:hover {
@@ -19,6 +20,9 @@ body {
   cursor: pointer;
 }
 
+#contentdd > img:hover {
+  transform: scale(1.01);
+}
 #offerbar {
   width: 100%;
   background-color: rgb(152, 224, 224);

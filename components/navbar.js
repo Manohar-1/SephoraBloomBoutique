@@ -31,7 +31,7 @@ function navbar() {
     </div>
     <div id="mainbar">
       <p id="logo">SEPHORA</p>
-      <input type="text" placeholder="Search" />
+      <input id='searchBox' type="text" placeholder="Search" />
 
       <ul>
         <li>Stores and Services</li>

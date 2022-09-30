@@ -47,7 +47,7 @@ let section = document.createElement("section");
 section.className = "slider_container";
 
 let cont = document.createElement("div");
-cont.className = "container";
+cont.className = "new_container";
 
 let scs = document.createElement("div");
 scs.className = "swiper card_newthing";
@@ -66,7 +66,7 @@ data.forEach(({ img_url, name, description }) => {
   ss.className = "swiper-slide";
 
   let ib = document.createElement("div");
-  ib.className = "img_box";
+  ib.setAttribute("class", "img_box33");
   ib.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px";
   ib.style.padding = "20px";
   ib.style.height = "45vh";
