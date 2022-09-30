@@ -245,17 +245,29 @@ let appendData = (data) => {
     data.map((el) => {
       if (el.price != 0.0 || 0) {
         let box = document.createElement("div");
+        box.style.boxShadow = " rgba(0, 0, 0, 0.24) 0px 3px 8px";
+        box.style.padding = "20px";
+        box.style.textAlign = "center";
 
         let img = document.createElement("img");
         img.src = el.image_link;
-        img.style.height = "40vh";
+        img.style.height = "30vh";
+        img.style.border = "1px solid black";
 
         let Brnad = document.createElement("h3");
         Brnad.innerText = el.brand;
+        Brnad.style.textAlign = "center";
 
+        let pdiv = document.createElement("div");
         let productName = document.createElement("p");
         productName.innerText = el.name;
+        productName.style.textAlign = "center";
         productName.setAttribute("class", "productName");
+        pdiv.append(productName);
+        pdiv.style.margin = "auto";
+        pdiv.style.height = "80px";
+        pdiv.style.width = "120px";
+        pdiv.style.border = "0px solid red";
 
         let color = document.createElement("p");
         let x = el.product_colors.length;
@@ -269,6 +281,7 @@ let appendData = (data) => {
         let price = document.createElement("h3");
         price.innerText = "$ " + el.price;
         price.setAttribute("class", "priceTag");
+        price.style.textAlign = "center";
 
         let button = document.createElement("button");
         button.innerText = "Add To Cart";
@@ -280,7 +293,7 @@ let appendData = (data) => {
           localStorage.setItem("cartItems", JSON.stringify(productArray));
         });
 
-        box.append(img, Brnad, productName, color, price, button);
+        box.append(img, Brnad, pdiv, color, price, button);
         container.append(box);
 
         let SearchResults = document.getElementById("SearchResults");
