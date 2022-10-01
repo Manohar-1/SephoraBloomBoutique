@@ -1,4 +1,3 @@
-
 .sipopup .sioverlay {
   position: fixed;
   top: 0px;
@@ -337,7 +336,6 @@ body {
   border-radius: 10px;
 }
 
-
 .supopup .suoverlay {
   position: fixed;
   top: 0px;
@@ -402,4 +400,3 @@ body {
   background-color: black;
   color: white;
 }
-
