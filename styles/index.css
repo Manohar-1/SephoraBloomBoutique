@@ -1,4 +1,4 @@
-body {
+  body {
   padding: 0px;
   margin: 0px;
 }
@@ -211,16 +211,27 @@ section {
   gap: 10px;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .justDroppedBox {
+  /* padding: ; */
   border: 0px red solid;
-  padding: 5px;
+  padding: 10px;
   font-size: 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  /* height: 400px; */
+  transition: 1s;
+  margin-bottom: 20px;
+}
+.justDroppedBox>p{
+  font-size: 15px;
 }
 .justDroppedContainer img {
   width: 150px;
   /* transition: 1s; */
+  border: 1px black solid;
+  /* margin-left: 20px; */
 }
 .leftAero {
   width: 45px;
@@ -253,13 +264,25 @@ section {
   border-radius: 50%;
   transform: translate(+15px, -20px);
 }
-.beautyoffersBox {
+.beautyOffersBox {   
   width: 240px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  border: 1px black solid;
+  padding: 10px;
+  /* transition: 2s; */
+}
+/* .beautyOffersBox:hover{ 
+  transition: 1s;  } */
+
+/* .beautyOffersBoxImg{
+  width: 100%;
+} */
+.beautyOffersBox>img{
+border: 1px solid black;
 }
 
 .beautyoffersBoxInner {
-  border: 0px red solid;
+  /* border: 1px black solid; */
   padding-left: 20px;
   height: 260px;
   position: relative;
@@ -289,20 +312,23 @@ section {
 
 .beautyoffersBoxButton {
   position: absolute;
-
+  /* border: none; */
   bottom: 0;
   /* margin-top: auto; */
   width: 220px;
   display: flex;
   margin-top: 35px;
   justify-content: space-between;
+  /* border-radius: 50px; */
 }
 
 .apply {
-  border-radius: 5%;
+  border-radius: 20%;
+  border: 1px black solid;
 }
-.seeDetails {
-  border: none;
+.SeeDetails {
+  border-radius: 20%;
+  border: 1px black solid;
 }
 #crousel-Item {
   display: flex;
@@ -310,4 +336,19 @@ section {
 }
 #crousel-Item img {
   width: 240px;
+}
+
+#tex{
+  margin-top: 30px;
+margin-left: 50px;
+}
+.swiper-wrapper{
+  
+  /* border: 1px red solid; */
+  height: 400px;
+}
+.swiper-slide{
+  border: 1px black solid;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
