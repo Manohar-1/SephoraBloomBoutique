@@ -78,7 +78,6 @@ body {
 }
 
 #details {
-
   border: 0px solid red;
   width: 200px;
   height: 30px;
@@ -206,9 +205,6 @@ section {
 }
 
 .swiper-slide > div:hover {
-
-.swiper-slide > div > div:hover {
-
   text-decoration: underline;
   cursor: pointer;
 }
@@ -224,8 +220,6 @@ section {
   border-radius: 10px;
 
   color: whitesmoke;
-
-
 }
 
 #def {
@@ -245,7 +239,6 @@ section {
   color: white;
 
   /* color: white; */
-
 }
 
 .slider_container .overlay {
