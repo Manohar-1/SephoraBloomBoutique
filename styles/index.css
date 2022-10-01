@@ -65,12 +65,20 @@ body {
 }
 #mainbar > input {
   padding: 5px;
+  padding: 10px 0px;
+  background-color: antiquewhite;
+  margin: 0px;
+  margin-top: -16px;
+}
+#mainbar > input {
+  padding: 2px;
   border-radius: 20px;
   width: 30%;
   border: 1px solid grey;
 }
 
 #details {
+
   border: 0px solid red;
   width: 200px;
   height: 30px;
@@ -87,17 +95,51 @@ body {
   cursor: pointer;
   color: black;
   margin-top: 10px;
+  /* margin: 0px;
+  padding: 0px; */
+  border: 0px solid red;
+  width: 200px;
+  height: 30px;
+  margin-top: 3px;
+  margin-left: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 8px;
+}
+#logo {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+  padding-left: 50px;
+  line-height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 5px;
+  color: black;
+
   text-decoration: none;
 }
 
 #mainbar > ul {
   list-style-type: none;
+
   margin-top: 10px;
+
+  padding: 0px;
+  margin: 0px;
+
   float: right;
 }
 #mainbar > ul > li {
   display: inline-block;
+
   /* line-height: 45px; */
+
+  line-height: 45px;
+
   margin: 0px 10px;
 }
 
@@ -112,10 +154,15 @@ body {
 #blackbar {
   width: 100%;
   background-color: black;
+
   display: flex;
   color: white;
   justify-content: center;
   align-items: center;
+
+  color: white;
+  justify-content: center;
+
   padding: 10px 0px;
 }
 
@@ -157,7 +204,11 @@ section {
 .swiper-slide > div > div {
   padding: 10px;
 }
+
 .swiper-slide > div:hover {
+
+.swiper-slide > div > div:hover {
+
   text-decoration: underline;
   cursor: pointer;
 }
@@ -171,7 +222,10 @@ section {
 #abc {
   background-color: #f7a691;
   border-radius: 10px;
+
   color: whitesmoke;
+
+
 }
 
 #def {
@@ -187,7 +241,11 @@ section {
 #klm {
   background-color: #edb143;
   border-radius: 10px;
+
   color: white;
+
+  /* color: white; */
+
 }
 
 .slider_container .overlay {

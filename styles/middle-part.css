@@ -101,11 +101,17 @@ body {
 }
 .swiper-slide:hover {
   transform: scale(1.02);
+
+  transform: scale(1);
+
   z-index: 2;
 }
 
 #last_car > div:hover {
   transform: scale(1.02);
+
+  transform: scale(1);
+
   z-index: 2;
 }
 

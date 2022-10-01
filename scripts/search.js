@@ -251,7 +251,11 @@ let appendData = (data) => {
 
         let img = document.createElement("img");
         img.src = el.image_link;
+
         img.style.height = "25vh";
+
+        img.style.height = "30vh";
+
         img.style.border = "1px solid black";
 
         let Brnad = document.createElement("h3");
@@ -264,6 +268,7 @@ let appendData = (data) => {
         productName.style.textAlign = "center";
         productName.setAttribute("class", "productName");
         pdiv.append(productName);
+
         pdiv.style.display = "flex";
         pdiv.style.margin = "auto";
         pdiv.style.height = "80px";
@@ -273,6 +278,11 @@ let appendData = (data) => {
           "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px";
         pdiv.style.justifyContent = "center";
         pdiv.style.alignItems = "center";
+
+        pdiv.style.margin = "auto";
+        pdiv.style.height = "80px";
+        pdiv.style.width = "120px";
+        pdiv.style.border = "0px solid red";
 
         let color = document.createElement("p");
         let x = el.product_colors.length;

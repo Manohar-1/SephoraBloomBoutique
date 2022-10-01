@@ -10,6 +10,7 @@ body {
 }
 
 /* input {
+<<<<<<< HEAD
     width: 80%;
     padding: 10px;
     margin-left: 10%;
@@ -17,6 +18,15 @@ body {
     border-radius: 30px;
     border: 2px solid grey;
   } */
+=======
+  width: 80%;
+  padding: 10px;
+  margin-left: 10%;
+
+  border-radius: 30px;
+  border: 2px solid grey;
+} */
+>>>>>>> ce0259f9bd979ecdfc56eacf8be6560ec9e58953
 #sephoraImage {
   width: 100%;
 }
@@ -51,7 +61,11 @@ body {
   width: 95%;
   border: 0px solid black;
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: 20% 80%;
+=======
+  grid-template-columns: 20% 70%;
+>>>>>>> ce0259f9bd979ecdfc56eacf8be6560ec9e58953
   height: auto;
   margin-top: 20px;
   margin: auto;
