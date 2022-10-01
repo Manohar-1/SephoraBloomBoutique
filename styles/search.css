@@ -19,6 +19,7 @@ body {
     border: 2px solid grey;
   } */
 
+
 #sephoraImage {
   width: 100%;
 }
@@ -55,8 +56,6 @@ body {
   display: grid;
 
   grid-template-columns: 20% 80%;
-
-  grid-template-columns: 20% 70%;
 
   height: auto;
   margin-top: 20px;
