@@ -5,7 +5,7 @@ body {
 
 #contentdd {
   position: absolute;
-  top: 150px;
+  top: 140px;
   width: 100%;
   border: 1px solid black;
   height: auto;
@@ -41,7 +41,8 @@ body {
   width: 100%;
   background-color: rgb(152, 224, 224);
   text-align: center;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: -15px;
 }
 #offerbar > p {
   padding: 10px;
@@ -57,57 +58,46 @@ body {
 #mainbar {
   width: 100%;
   display: flex;
-  padding: 10px 0px;
   background-color: antiquewhite;
-  margin: 0px;
-  margin-top: -16px;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20px; */
 }
 #mainbar > input {
-  /* padding: 2px;  */
-  height: 25px;
-  margin-top: 10px;
+  padding: 5px;
   border-radius: 20px;
   width: 30%;
   border: 1px solid grey;
 }
 
 #details {
-  margin: 0px;
-  padding: 0px;
   border: 0px solid red;
   width: 200px;
   height: 30px;
-  margin-top: 3px;
-  margin-left: 40px;
+
   text-align: center;
   font-weight: bold;
-  padding-top: 8px;
 }
 #logo {
-  margin: 0px;
-  padding: 0px;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
-  padding-left: 50px;
-  line-height: 40px;
+  border: 0px solid red;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 5px;
-  margin-right: 5px;
   color: black;
+  margin-top: 10px;
   text-decoration: none;
 }
 
 #mainbar > ul {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+  margin-top: 10px;
   float: right;
 }
 #mainbar > ul > li {
   display: inline-block;
-  line-height: 45px;
+  /* line-height: 45px; */
   margin: 0px 10px;
 }
 
@@ -122,8 +112,10 @@ body {
 #blackbar {
   width: 100%;
   background-color: black;
+  display: flex;
   color: white;
   justify-content: center;
+  align-items: center;
   padding: 10px 0px;
 }
 
@@ -165,7 +157,7 @@ section {
 .swiper-slide > div > div {
   padding: 10px;
 }
-.swiper-slide > div > div:hover {
+.swiper-slide > div:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -179,6 +171,7 @@ section {
 #abc {
   background-color: #f7a691;
   border-radius: 10px;
+  color: whitesmoke;
 }
 
 #def {
@@ -194,7 +187,7 @@ section {
 #klm {
   background-color: #edb143;
   border-radius: 10px;
-  /* color: white; */
+  color: white;
 }
 
 .slider_container .overlay {

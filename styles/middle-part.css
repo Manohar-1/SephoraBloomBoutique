@@ -100,12 +100,12 @@ body {
   border: 0px solid red;
 }
 .swiper-slide:hover {
-  transform: scale(1);
+  transform: scale(1.02);
   z-index: 2;
 }
 
 #last_car > div:hover {
-  transform: scale(1);
+  transform: scale(1.02);
   z-index: 2;
 }
 
