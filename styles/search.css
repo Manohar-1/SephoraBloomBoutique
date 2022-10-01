@@ -10,7 +10,7 @@ body {
 }
 
 /* input {
-<<<<<<< HEAD
+
     width: 80%;
     padding: 10px;
     margin-left: 10%;
@@ -56,7 +56,7 @@ body {
   display: grid;
 
   grid-template-columns: 20% 80%;
-  grid-template-columns: 20% 70%;
+
   height: auto;
   margin-top: 20px;
   margin: auto;
