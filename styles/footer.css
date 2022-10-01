@@ -1,0 +1,228 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Helvetica neue", helvetica;
+  width: 100%;
+  border: 0px solid black;
+  height: 800px;
+  display: grid;
+  grid-template-rows: repeat(3, 10%);
+}
+.footerhr {
+  border: 0.01rem solid grey;
+  background-color: grey;
+  border-radius: 50px;
+  height: 0.1px;
+  width: 98%;
+  margin-left: 0px;
+}
+footer:hover {
+  cursor: default;
+}
+.hoverwalacontent:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer > div:nth-child(1) {
+  border: 0px solid #cccccc;
+  background-color: #cccccc;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+footer > div:nth-child(2) {
+  margin-top: 20px;
+  border: 0px solid blue;
+  width: 90%;
+  height: auto;
+  margin: 0 72px 0 72px;
+}
+#footerTopDiv {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  border: 0px solid white;
+  padding-top: 50px;
+  flex-direction: colum;
+}
+#footerTopDiv > div {
+  border: 0px solid blue;
+  width: 15%;
+  height: 32px;
+  font-size: 12px;
+  display: flex;
+}
+#footerTopDiv > div:nth-child(5) {
+  width: 40%;
+  margin-left: 2%;
+}
+
+#footerTopDiv > div > div {
+  width: 29px;
+  height: 29px;
+  border: 0px solid red;
+}
+#footerTopDiv > div > div > img {
+  width: 100%;
+}
+#footerTopDiv > div > span {
+  margin-left: 7px;
+  font-weight: bold;
+}
+#footerTopDiv > div > P {
+  margin-left: -70px;
+  margin-top: 15px;
+}
+#footerTopDiv > div:nth-child(2) > P {
+  margin-left: -97px;
+  margin-top: 15px;
+}
+#footerTopDiv > div:nth-child(4) > P {
+  margin-left: -135px;
+  margin-top: 15px;
+}
+#footerTopDiv > div:nth-child(5) > P {
+  margin-left: -168px;
+  margin-top: 15px;
+}
+#idDetails {
+  text-decoration: underline;
+}
+#idDetails:hover {
+  cursor: pointer;
+}
+
+#footerMiddleDiv {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+#footerMiddleDiv > div {
+  width: 15%;
+  border: 0px solid rgb(255, 255, 255);
+}
+#footerMiddleDiv > div:nth-child(5) {
+  width: 40%;
+}
+
+#footerMiddleDiv h1 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.5px;
+  word-spacing: 0px;
+}
+#footerMiddleDiv p {
+  font-size: 12px;
+  line-height: 15px;
+  word-spacing: 0px;
+}
+#RandL div {
+  margin-top: 15px;
+}
+#RandL > div > img {
+  height: 15px;
+}
+#RandL p {
+  width: auto;
+  height: 2px;
+  margin-top: 4px;
+}
+#United {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  word-spacing: 0px;
+}
+#canadaE {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  word-spacing: 0px;
+}
+#canadaF {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  word-spacing: 0px;
+}
+#weBelongDiv {
+  width: 90%;
+  height: 94px;
+  border: 0px solid red;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  line-height: 35px;
+}
+#newsletterDiv {
+  height: 85px;
+  width: 90%;
+  border: 0px solid red;
+  margin-top: 200px;
+}
+#singnupforsephora {
+  font-size: 14px;
+  font-weight: bold;
+}
+#newsletterinput {
+  width: 70%;
+  height: 42px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+}
+#newslettersignupbutton {
+  border-radius: 50px;
+  padding: 13px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  font-weight: bold;
+}
+#newslettersignupbutton:hover {
+  color: grey;
+  cursor: pointer;
+  border-color: grey;
+}
+#footerBottomDiv {
+  display: flex;
+  /* margin-top: 25px; */
+}
+
+#footerBottomDiv > div:nth-child(1) {
+  width: 60%;
+  border: 0px solid rgb(117, 163, 142);
+  height: auto;
+  font-size: 12px;
+}
+#footerBottomDiv > div:nth-child(2) {
+  width: 40%;
+  height: auto;
+  border: 0px solid orange;
+  font-size: 25px;
+  /* padding-top: 25px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#socialmediahandleDiv a {
+  text-decoration: none;
+  color: white;
+}
+.etcText {
+  display: flex;
+  gap: 20px;
+}

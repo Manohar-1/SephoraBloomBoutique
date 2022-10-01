@@ -1,0 +1,161 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "helvetica neue", Arial, Helvetica;
+  font-size: 12px;
+  line-height: 10px;
+}
+#navbar {
+  margin-top: -13px;
+}
+
+/* input {
+  width: 80%;
+  padding: 10px;
+  margin-left: 10%;
+
+  border-radius: 30px;
+  border: 2px solid grey;
+} */
+#sephoraImage {
+  width: 100%;
+}
+
+#ActiveDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  display: none;
+}
+#productLength {
+  margin-left: 27%;
+}
+#ActiveDiv > select {
+  border: none;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  padding: 0px 5px 0px 5px;
+}
+#ActiveDiv > select:hover {
+  background: grey;
+  cursor: pointer;
+  border: 0px solid grey;
+  border: none;
+}
+#filter {
+  margin-right: 100px;
+}
+
+#mainDiv {
+  width: 95%;
+  border: 0px solid black;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: auto;
+  margin-top: 20px;
+  margin: auto;
+  gap: 25px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+#mainDiv > div {
+  border: 0px solid red;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  height: auto;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+#container > div {
+  border: 0px solid green;
+  font-size: 12px;
+  font-family: "helvetica neue", Arial, Helvetica;
+  word-spacing: 0%;
+  line-height: 0px;
+}
+#container > div > img {
+  width: 100%;
+}
+#container > div > img:hover {
+  cursor: pointer;
+}
+#container > div > p {
+  margin-left: 20px;
+}
+#container > div > h3 {
+  margin-left: 20px;
+}
+
+#container > div > button {
+  margin-left: 20px;
+}
+#container > div > button:hover {
+  color: white;
+  background: black;
+}
+#container > div > p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#loader {
+  width: 415%;
+}
+#nodataImage {
+  width: 400%;
+}
+
+#leftbar {
+  line-height: 10px;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.dropdown.active svg {
+  transform: rotate(180deg);
+}
+.dropdown {
+  max-width: 90%;
+  margin-top: 5px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+svg {
+  transition: transform 0.1s ease-in;
+  margin-top: 18px;
+}
+
+.dropdown.active .subDiv {
+  max-height: 300px;
+}
+
+.subDiv {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 12px;
+}
+.subDiv > p {
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+.subDiv > p:hover {
+  text-decoration: underline;
+}
+
+.priceTag {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+.productName {
+  line-height: 15px;
+}
