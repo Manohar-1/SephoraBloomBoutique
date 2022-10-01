@@ -3,13 +3,13 @@ function navbar() {
     <div id="offerbar">
       <p>
         We offer FREE Standard 1-3 Day Shipping on all US and Canada merchandise
-        <b onclick="togglePopup()">SEE DETAILS</b>
+        <b ">SEE DETAILS</b>
       </p>
 
       <div class="popup" id="popup-1">
         <div class="overlay"></div>
         <div class="content">
-          <div class="close-btn" onclick="togglePopup()">&times;</div>
+          <div class="close-btn" ">&times;</div>
           <p>
             We offer
             <b>FREE</b> Standard 1-3 Day Shipping on all US and Canada

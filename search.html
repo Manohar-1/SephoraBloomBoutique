@@ -4,9 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Search-Sephora</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <link rel="stylesheet" href="styles/search.css" />
+
+    <link rel="stylesheet" href="styles/search.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="https://images.agoramedia.com/wte3.0/gcms/retailer-icons/Sephora.svg"
+    />
   </head>
   <body>
-    <h1>amanbas</h1>
+    <div id="navbar"></div>
+    <!-- <div><input id="searchBox" type="text" placeholder="search" /></div> -->
+
+    <img
+      id="sephoraImage"
+      src="https://pubsaf.global.ssl.fastly.net/prmt/3008ff1940f3e81518954fb1c8f3e3b0"
+      alt=""
+    />
+    <div id="ActiveDiv">
+      <h4 id="productLength"></h4>
+      <select id="filter">
+        <option value="">Sort by</option>
+        <option value="Sort-Ih">Price Low to High</option>
+        <option value="High">Price High to Low</option>
+      </select>
+    </div>
+
+    <div id="mainDiv">
+      <div id="leftbar">
+        <h2 id="SearchResults"></h2>
+        <p id="makeup"></p>
+        <p id="gift"></p>
+        <p id="Clean"></p>
+        <p id="skincare"></p>
+        <p id="MiniSize"></p>
+        <div class="dropdown">
+          <div class="mainDiv">
+            <h3>Brand</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="subDiv">
+            <p id="pTag0">alva</p>
+            <p id="pTag1">annabelle</p>
+            <p id="pTag2">benefit</p>
+            <p id="pTag3">cargo cosmetics</p>
+            <p id="pTag4">colourpop</p>
+            <p id="pTag5">cover girl</p>
+            <p id="pTag6">l'oreal</p>
+            <p id="pTag7">lotus cosmetics usa</p>
+            <p id="pTag8">maybelline</p>
+            <p id="pTag9">rejuva minerals</p>
+            <p id="pTag10">wet n wild</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="mainDiv">
+            <h3>Product Category</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="subDiv">
+            <p id="pTag11">Blush</p>
+            <p id="pTag12">Bronzer</p>
+            <p id="pTag13">Eyebrow</p>
+            <p id="pTag14">Eyeliner</p>
+            <p id="pTag15">Eyeshadow</p>
+            <p id="pTag16">Foundation</p>
+            <p id="pTag17">Lip liner</p>
+            <p id="pTag18">Lipstick</p>
+            <p id="pTag19">Mascara</p>
+            <p id="pTag20">Nail polish</p>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <img
+          id="loader"
+          src="https://media1.giphy.com/media/VHqOcnzGb27XuCgZxB/giphy.gif?cid=790b76110661156990afaeb5509d843b08cf09d837b6edf0&rid=giphy.gif&ct=g"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <footer></footer>
   </body>
 </html>
+
+<script type="module" src="scripts/search.js"></script>
+<script src="./scripts/signinsearch.js"></script>
+<script type="module" src="./scripts/footer.js"></script>

@@ -2,8 +2,8 @@ let data = [
   {
     img_url:
       "https://www.sephora.com/productimages/sku/s2362168-main-zoom.jpg?imwidth=320",
-    name: "Rare Beauty By Selena Gomez",
-    description: "Positive Light Liquid Luminizer Highlight",
+    name: "Rare Beauty Selena Gomez",
+    description: "Positive Light Liquid ",
   },
   {
     img_url:
@@ -15,31 +15,31 @@ let data = [
     img_url:
       "https://www.sephora.com/productimages/sku/s2333771-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=320",
     name: "Kosas",
-    description: "Revealer Super Creamy Brightening",
+    description: "Revealer Creamy Brightening",
   },
   {
     img_url:
       "https://www.sephora.com/productimages/sku/s2418663-main-zoom.jpg?pb=allure-2022-bestofbeauty-badge&imwidth=320",
     name: "Rare Beauty by Selena Gomez",
-    description: "Stay Vulnerable Melting Cream Blush",
+    description: "Stay Vulnerable Cream Blush",
   },
   {
     img_url:
       "https://www.sephora.com/productimages/sku/s2362028-main-zoom.jpg?imwidth=320",
     name: "Rare Beauty by Selena Gomez",
-    description: "Liquid Touch Brightening Concealer",
+    description: "Liquid Brightener",
   },
   {
     img_url:
       "https://www.sephora.com/productimages/sku/s2597342-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=320",
     name: "HAUS LABS BY LADY GAGA",
-    description: "Triclone Skin Tech Medium Coverage",
+    description: "Triclone Skin Tech Coverage",
   },
   {
     img_url:
       "https://www.sephora.com/productimages/sku/s1966258-main-zoom.jpg?pb=2020-03-allure-best-2019&imwidth=320",
     name: "Charlotte Tilbury",
-    description: "Mini Hollywood Flawless Filter",
+    description: "Mini Flawless Filter",
   },
 ];
 
@@ -76,6 +76,7 @@ data.forEach(({ img_url, name, description }) => {
   img.src = img_url;
   img.style.width = "100%";
   img.style.height = "20vh";
+  img.style.border = "1px solid black";
 
   let h2tag = document.createElement("h2");
   h2tag.innerText = name;
@@ -83,6 +84,7 @@ data.forEach(({ img_url, name, description }) => {
 
   let desc = document.createElement("p");
   desc.innerText = description;
+  desc.style.fontSize = "15px";
 
   ib.append(img, h2tag, desc);
   ss.append(ib);
@@ -93,5 +95,5 @@ scs.append(sw, nextsw, prevsw);
 cont.append(scs);
 section.append(cont);
 
-console.log(section);
+// console.log(section);
 document.querySelector("#swiper2>#swiper2_container").append(section);

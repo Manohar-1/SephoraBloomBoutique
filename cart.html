@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      display: flex;
+    }
+    #cart-section {
+      position: relative;
+      width: 70%;
+      border: 0px solid black;
+      height: auto;
+    }
+    #payment-section {
+      position: fixed;
+      right: 0px;
+      top: 0px;
+      width: 29%;
+      border: 0px solid black;
+      height: 400px;
+      background-color: green;
+    }
+
+    #payment-bar {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background-color: dimgray;
+      height: 50px;
+    }
+    #cart-section img {
+      height: 100px;
+      width: 100px;
+    }
+    .fiftych {
+      width: 50ch;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="cart-section">
+        <div id="payment-bar"></div>
+      </div>
+      <div id="payment-section"></div>
+    </div>
+  </body>
+</html>
+<script>
+  let data = JSON.parse(localStorage.getItem("cartItems"));
+  console.log("data:", data);
+
+  displayTable(data);
+
+  function displayTable(data) {
+    document.querySelector("#cart-section").innerHTML = "";
+    data.forEach(({ name, price, description, image_link }, i) => {
+      //   console.log("name:", name);
+      //   console.log("price:", price, description, image_link);
+      console.log("i:", i);
+      let box = document.createElement("div");
+      box.style.border = "0px solid black";
+      box.style.display = "flex";
+
+      let img = document.createElement("img");
+      img.src = image_link;
+      img.style.height = "200px";
+      img.style.width = "200px";
+
+      //   img.style.width = "100%";
+      //   div1.append(img);
+
+      let div2 = document.createElement("div");
+      let name_x = document.createElement("h4");
+      name_x.innerText = name;
+
+      let desc = document.createElement("p");
+      desc.className = "fiftych";
+      desc.style.color = "grey";
+
+      desc.innerText = description;
+
+      let price_x = document.createElement("p");
+      price_x.innerText = price;
+
+      let saveforlater = document.createElement("button");
+      saveforlater.innerText = "SAVE FOR LATER";
+      saveforlater.style.color = "white";
+      saveforlater.style.fontWeight = "bold";
+      saveforlater.style.background = "black";
+      saveforlater.style.margin = "20px 20px 20px 0px";
+      saveforlater.addEventListener("click", function () {
+        alert(`${name} has been successfully saved in saved for later items.`);
+        delete_x(data, i);
+      });
+
+      let remove = document.createElement("button");
+      remove.innerText = "REMOVE";
+      remove.style.color = "white";
+      remove.style.fontWeight = "bold";
+      remove.style.background = "black";
+      remove.style.margin = "20px 20px 20px 0px";
+
+      remove.addEventListener("click", () => {
+        delete_x(data, i);
+        alert(`${name} has been removed from cart successfully.`);
+      });
+      div2.append(name_x, desc, price_x, saveforlater, remove);
+      box.append(img, div2);
+
+      document.querySelector("#cart-section").append(box);
+    });
+  }
+
+  function delete_x(data, i) {
+    let filtered_items = data.filter((el, index) => {
+      return index != i;
+    });
+    console.log("filtered_items:", filtered_items);
+    localStorage.setItem("cartItems", JSON.stringify(filtered_items));
+    displayTable(filtered_items);
+  }
+</script>
