@@ -207,7 +207,7 @@ section {
 
 .swiper-slide > div:hover {
 
-.swiper-slide > div > div:hover {
+
 
   text-decoration: underline;
   cursor: pointer;
