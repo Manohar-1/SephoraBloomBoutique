@@ -1,166 +1,598 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: "helvetica neue", Arial, Helvetica;
-  font-size: 12px;
-  line-height: 10px;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "helvetica neue",Arial, Helvetica;
+    font-size: 12px;
+    /* line-height: 10px; */
 }
-#navbar {
+
+nav{
+  font-size: 14px;
+  font-family: "Helvetica neue", helvetica,arial;
+  width: 100%;
   margin-top: -13px;
 }
-
-/* input {
-
-    width: 80%;
-    padding: 10px;
-    margin-left: 10%;
-  
-    border-radius: 30px;
-    border: 2px solid grey;
-  } */
-
-
-#sephoraImage {
+#pinkBar{
+  border: 0px solid rgb(171, 13, 13);
   width: 100%;
+  height: 60px;
+  background: rgb(254,205,200);
+}
+#pinkBar>p{
+  text-align: center;
+  padding-top:20px;
+}
+#pinkBar>p>span{
+  font-weight: bold;
 }
 
-#ActiveDiv {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+#pinkBar>p>span:hover{
+  cursor: pointer;
+}
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
   display: none;
 }
-#productLength {
-  margin-left: 27%;
-}
-#ActiveDiv > select {
-  border: none;
-  border-radius: 20px;
-  background: black;
-  color: white;
-  padding: 0px 5px 0px 5px;
-}
-#ActiveDiv > select:hover {
-  background: grey;
-  cursor: pointer;
-  border: 0px solid grey;
-  border: none;
-}
-#filter {
-  margin-right: 100px;
-}
-
-#mainDiv {
-  width: 95%;
-  border: 0px solid black;
-  display: grid;
-
-  grid-template-columns: 20% 80%;
-
-  height: auto;
-  margin-top: 20px;
-  margin: auto;
-  gap: 25px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-#mainDiv > div {
-  border: 0px solid red;
-}
-#container {
-  display: grid;
-  grid-template-columns: repeat(4, 22%);
-  height: auto;
-  gap: 20px;
-  justify-content: space-evenly;
-}
-#container > div {
-  border: 0px solid green;
-  font-size: 12px;
-  font-family: "helvetica neue", Arial, Helvetica;
-  word-spacing: 0%;
-  line-height: 0px;
-}
-#container > div > img {
+.content>p>img{
   width: 100%;
+  height: 50vh;
 }
-#container > div > img:hover {
+.content>p{
+  text-align: justify;
+  font-size: 14px;
+  word-spacing: 1px;
+}
+.content>p>span{
+  margin-left: 40px;
+}
+.content>p>span>span{
+  margin-left: 180px;
+}
+#lastword{
+  top:1000px;
+  margin-top:500px;
+}
+.popup .content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 575px;
+  height: auto;
+  z-index: 2;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.popup .close-btn {
   cursor: pointer;
-}
-#container > div > p {
-  margin-left: 20px;
-}
-#container > div > h3 {
-  margin-left: 20px;
-}
-
-#container > div > button {
-  margin-left: 20px;
-}
-#container > div > button:hover {
-  color: white;
-  background: black;
-}
-#container > div > p:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 30px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: 600px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
 }
 
-#loader {
-  width: 415%;
-}
-#nodataImage {
-  width: 400%;
+.popup.active .overlay {
+  display: block;
 }
 
-#leftbar {
-  line-height: 10px;
+.popup.active .content {
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.mainDiv {
+
+#whiteBar{
   display: flex;
-  justify-content: space-between;
-  font-size: 12px;
+  height: 120px;
+}
+#whiteBar>div{
+  border:0px solid green;
+  height:62px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 10%;
+  padding-top: 40px;
+  gap: 0px;
 }
 
-.dropdown.active svg {
-  transform: rotate(180deg);
+#whiteBar>div:nth-child(1){
+flex: 0.12;
+text-align: center;
+letter-spacing: 10px;
+font-size: 20px;
+font-weight: bold;
+line-height: 21px;
+/* margin-right:0px; */
+margin-left: 50px;
 }
-.dropdown {
-  max-width: 90%;
-  margin-top: 5px;
-  padding-bottom: 2px;
-  border-bottom: 1px solid grey;
+#whiteBar>div:nth-child(1):hover{
   cursor: pointer;
 }
-svg {
-  transition: transform 0.1s ease-in;
-  margin-top: 18px;
+#whiteBar>div:nth-child(2){
+  flex:0.5;
+  margin-left: -20px;
+  padding-top: 30px;
+}
+#searchBox{
+  width: 428px;
+  height: 34px;
+  border-radius: 30px;
+  border: 1px  solid grey;
+}
+/* input[type="text"] */
+
+#whiteBar>div:nth-child(3){
+  margin-left: -25px;
+}
+#whiteBar>div:nth-child(3):hover{
+  cursor: pointer;
+}
+#whiteBar>div:nth-child(3)>img{
+  height: 24px;
+  width: 24px;
+}
+#whiteBar>div:nth-child(3)>p{
+  margin-top: -28px;
+  margin-left: 30px;
+  
+}
+#whiteBar>div:nth-child(3)>#chooseStore{
+  margin-top: -10px;
+  margin-left: 30px;
+  font-size: 11px;
+  line-height: 1.5px;
+  color: rgb(86, 86, 86);
+}
+#whiteBar>div:nth-child(4){
+  margin-left: -47px;
+  width: 8%;
+}
+#whiteBar>div:nth-child(4):hover{
+  cursor: pointer;
+}
+#whiteBar>div:nth-child(4)>img{
+  height: 24px;
+  width: 24px;
+}
+#whiteBar>div:nth-child(4)>p{
+  margin-top: -19px;
+  margin-left: 30px;
+  
 }
 
-.dropdown.active .subDiv {
-  max-height: 300px;
+#whiteBar>div:nth-child(5){
+  margin-left: -47px;
+  width: 10%;
+}
+#whiteBar>div:nth-child(5):hover{
+  cursor: pointer;
+}
+#whiteBar>div:nth-child(5)>img{
+  height: 34px;
+  width: 34px;
+}
+#whiteBar>div:nth-child(5)>p{
+  margin-top: -32px;
+  margin-left: 38px;
+  
+}
+#whiteBar>div:nth-child(5)>#signInText{
+  margin-top: -10px;
+  margin-left: 38px;
+  font-size: 11px;
+  /* line-height: 1.5px; */
+  color: rgb(86, 86, 86);
 }
 
-.subDiv {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  font-size: 12px;
+#whiteBar>div:nth-child(6){
+  margin-left: -47px;
+  width: 10%;
+  padding-top: 0px;
 }
-.subDiv > p {
-  margin-left: 10px;
-  text-transform: capitalize;
+#whiteBar>div:nth-child(6)>p{
+ word-spacing: 10px;
+ font-size: 20px;
+
 }
-.subDiv > p:hover {
+#whiteBar>div:nth-child(6)>p>i{
+  color:white;
+  background-color: black;
+  padding:5px
+
+}
+#whiteBar>div:nth-child(6)>p>i:hover{
+  background-color:white;
+  color: black;
+  padding:5px;
+  cursor: pointer;
+
+}
+.sipopup .sioverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.sipopup .sicontent {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: auto;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sipopup .siclose-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: grey;
+  font-size: 25px;
+  font-weight: 600px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.sipopup.active .sioverlay {
+  display: block;
+}
+
+.sicontent > input {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.sipopup.active .sicontent {
+  transition: all 300ms ease-in;
+  transform: translate(-50%, -50%) scale(1);
+}
+#terms {
+  color: blue;
   text-decoration: underline;
 }
-
-.priceTag {
-  font-size: 12px;
-  font-weight: bold;
-  padding-top: 5px;
+#signIn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
-.productName {
-  line-height: 15px;
+#signIn:hover{
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+#createAccount {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+#createAccount:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.supopup .suoverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.supopup .sucontent {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: auto;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.supopup .suclose-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: grey;
+  font-size: 25px;
+  font-weight: 600px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.supopup.active .suoverlay {
+  display: block;
+}
+
+.sucontent > input {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+.supopup.active .sucontent {
+  transition: all 300ms ease-in;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.sucontent > #signUpButton {
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+}
+
+#signUpButton:hover{
+  cursor: pointer;
+  background: black;
+  color: white;;
+}
+
+#blackBar{
+  background-color: black;
+  color: white;
+  height: 44px;
+  border: 0px solid white;
+  width:100% ;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#blackBar>p{
+  border: 0px solid white;
+}
+#blackBar>p:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+}
+#toShowCartQuentity{
+  border: 0px solid black;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 90px;
+  right: 65px;
+  border-radius: 50%;
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,150,144);
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/* my code */
+#sephoraImage{
+    width: 100%;
+
+}
+
+
+#ActiveDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    display: none;
+}
+#productLength{
+    margin-left: 27%;
+}
+#ActiveDiv>select{
+    border:none;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    padding: 0px 5px 0px 5px ;
+}
+#ActiveDiv>select:hover{
+    background: grey;
+    cursor: pointer;
+    border: 0px solid grey;
+    border: none;
+
+}
+#filter{
+    margin-right: 100px;
+}
+
+#mainDiv{
+    width: 95%;
+    border: 0px solid  black;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    height: auto;
+    margin-top: 20px;
+    margin: auto;
+    gap: 25px;
+    justify-content: center;
+}
+#mainDiv>div{
+    border: 0px solid red;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    height: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+#container>div{
+    border: 0px solid green;
+    font-size: 12px;
+    font-family: "helvetica neue",Arial, Helvetica;
+    word-spacing: 0%;
+    line-height:0px;
+}
+#container>div>img{
+    width: 100%;
+}
+#container>div>img:hover{
+   cursor: pointer;
+}
+#container>div>p{
+   margin-left: 20px;
+}
+#container>div>h3{
+   margin-left: 20px;
+   text-transform: capitalize;
+}
+
+#container>div>button{
+   margin-left: 20px;
+}
+#container>div>button:hover{
+
+   color: white;
+   background: black;
+
+}
+#container>div>p:hover{
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+#loader{
+    margin-left: 230px;
+   text-transform: capitalize;
+}
+
+
+#leftbar{
+    line-height: 10px;
+}
+
+.mainDiv{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.dropdown.active svg{
+    transform: rotate(180deg);
+}
+.dropdown{
+    max-width: 90%;
+    margin-top: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid grey;
+    cursor:pointer;
+}
+svg{
+    transition: transform 0.1s ease-in;
+    margin-top: 18px;
+    
+}
+
+.dropdown.active .subDiv{
+    max-height: 300px;
+}
+
+
+.subDiv{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: 12px;
+}
+.subDiv>p{
+    margin-left :10px; 
+    text-transform: capitalize;
+}
+.subDiv>p:hover{
+    text-decoration: underline;
+}
+
+.priceTag{
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.productName{
+    line-height: 15px;
 }

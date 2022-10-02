@@ -4,71 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sephora</title>
+    <link
+      rel="icon"
+      href="https://images.agoramedia.com/wte3.0/gcms/retailer-icons/Sephora.svg"
+    />
   </head>
   <style>
     body {
       margin: 0;
       padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
     }
+
     #container {
       display: flex;
+      border: 1px solid green;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #cart-section {
-      position: relative;
       width: 70%;
       border: 0px solid black;
       height: auto;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #payment-section {
       position: fixed;
-      right: 0px;
-      top: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center; */
+      padding-left: 5px;
       width: 29%;
+      right: 2px;
+      top: 2px;
+      background-color: white;
       border: 0px solid black;
-      height: 400px;
-      background-color: green;
+      height: auto;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #payment-section > input {
+      width: 40%;
+      padding: 5px;
+      margin: 5px;
+    }
+    #payment-section > button {
+      width: 25%;
+      margin: 5px;
     }
 
-    #payment-bar {
-      position: fixed;
-      bottom: 0px;
+    .paymentbar {
       width: 100%;
-      background-color: dimgray;
+      background-color: white;
+      border: 0px solid black;
       height: 50px;
+      position: sticky;
+      bottom: 0px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-sizing: border-box;
+      padding: 10px;
     }
-    #cart-section img {
-      height: 100px;
-      width: 100px;
-    }
+
     .fiftych {
       width: 50ch;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
+    #totalPrice {
+      text-align: right;
+    }
   </style>
   <body>
     <div id="container">
-      <div id="cart-section">
-        <div id="payment-bar"></div>
+      <div id="cart-section"></div>
+      <div id="payment-section">
+        <h2>PRICE DETAILS</h2>
+        <p>
+          Price(<span id="no-of-items"></span>Items):<span
+            id="totalPrice"
+          ></span>
+        </p>
+        <input type="text" placeholder="Enter Your Coupon" />
+        <button>APPLY</button>
+        <p>Discount:<span id="discountAmount"></span></p>
+        <p>Delivery Charges:0.5$</p>
+        <h2>Total Amount:<span id="FinalAmount"></span></h2>
+        <h4 style="color: green">
+          You saved <span id="savedamount">0</span>$ on this order
+        </h4>
       </div>
-      <div id="payment-section"></div>
     </div>
   </body>
 </html>
 <script>
   let data = JSON.parse(localStorage.getItem("cartItems"));
   console.log("data:", data);
-
+  let total_price = 0;
   displayTable(data);
 
   function displayTable(data) {
+    document.querySelector("#no-of-items").innerText = `${data.length} `;
     document.querySelector("#cart-section").innerHTML = "";
+
     data.forEach(({ name, price, description, image_link }, i) => {
-      //   console.log("name:", name);
-      //   console.log("price:", price, description, image_link);
-      console.log("i:", i);
       let box = document.createElement("div");
       box.style.border = "0px solid black";
       box.style.display = "flex";
@@ -77,9 +116,6 @@
       img.src = image_link;
       img.style.height = "200px";
       img.style.width = "200px";
-
-      //   img.style.width = "100%";
-      //   div1.append(img);
 
       let div2 = document.createElement("div");
       let name_x = document.createElement("h4");
@@ -92,7 +128,10 @@
       desc.innerText = description;
 
       let price_x = document.createElement("p");
-      price_x.innerText = price;
+      price_x.innerText = `${price}$`;
+      price_x.style.fontWeight = "bold";
+
+      total_price = total_price + Number(price);
 
       let saveforlater = document.createElement("button");
       saveforlater.innerText = "SAVE FOR LATER";
@@ -101,6 +140,17 @@
       saveforlater.style.background = "black";
       saveforlater.style.margin = "20px 20px 20px 0px";
       saveforlater.addEventListener("click", function () {
+        total_price = total_price - Number(price); 
+ 
+        document.querySelector("#totalPrice").innerText = `${total_price}`;
+        // document.querySelector("#discountAmount").style.color = "green";
+        document.querySelector("#FinalAmount").innerText = total_price + 0.5;
+        if (total_price == 0) {
+          document.querySelector("#totalPrice").innerText = `0`;
+
+          document.querySelector("#FinalAmount").innerText = "0";
+        }
+
         alert(`${name} has been successfully saved in saved for later items.`);
         delete_x(data, i);
       });
@@ -113,15 +163,80 @@
       remove.style.margin = "20px 20px 20px 0px";
 
       remove.addEventListener("click", () => {
+        total_price = total_price - Number(price);
+        document.querySelector("#totalPrice").innerText = `${total_price}`;
+        // document.querySelector("#discountAmount").style.color = "green";
+        document.querySelector("#FinalAmount").innerText = total_price + 0.5;
+        if (total_price == 0) {
+          document.querySelector("#totalPrice").innerText = `0`;
+
+          document.querySelector("#FinalAmount").innerText = "0";
+        }
+        // document.querySelector('#savedamount').innerText=(total_price*0.3)-0.5;
         delete_x(data, i);
+
         alert(`${name} has been removed from cart successfully.`);
       });
       div2.append(name_x, desc, price_x, saveforlater, remove);
       box.append(img, div2);
-
       document.querySelector("#cart-section").append(box);
     });
   }
+
+  document.querySelector("#totalPrice").innerText = `${total_price}`;
+  document.querySelector("#discountAmount").innerText = "0$";
+  document.querySelector("#discountAmount").style.color = "green";
+  document.querySelector("#FinalAmount").innerText = total_price + 0.5 + "$";
+
+  document
+    .querySelector("#payment-section>button")
+    .addEventListener("click", () => {
+      let code = document.querySelector("#payment-section>input").value;
+      if (code == "MASAI30") {
+        alert("Coupon Code Applied Successfully...!");
+        document.querySelector("#discountAmount").innerText = `-${
+          0.3 * total_price
+        }$`;
+        // total_price = total_price - 0.3 * total_price;
+        document.querySelector("#totalPrice").innerText = `${total_price}`;
+        document.querySelector("#discountAmount").style.color = "green";
+        document.querySelector("#FinalAmount").innerText =
+          total_price - 0.3 * total_price + 0.5;
+        document.querySelector("#savedamount").innerText =
+          total_price * 0.3 - 0.5;
+        if (total_price == 0) {
+          document.querySelector("#totalPrice").innerText = `${total_price}`;
+          document.querySelector("#FinalAmount").innerText = "0$";
+        }
+      } else {
+        alert("Invalid Coupon Code");
+      }
+    });
+
+  let pay_div = document.createElement("div");
+  pay_div.className = "paymentbar";
+  pay_div.style.display = "flex";
+  pay_div.style.justifyContent = "right";
+  pay_div.style.alignItems = "center";
+
+  let order = document.createElement("button");
+  order.innerText = "PLACE ORDER";
+  order.style.marginRight = "1%";
+
+  pay_div.append(order);
+
+  order.style.padding = "5px";
+  order.style.width = "20%";
+  order.style.fontWeight = "bold";
+  order.style.background = "black";
+  order.style.color = "white";
+  order.addEventListener("click", () => {
+    alert("Order Placed Successfully");
+    setTimeout(function () {
+      alert("Your Order will be delivered in 4days");
+    }, 3000);
+  });
+  document.querySelector("#cart-section").append(pay_div);
 
   function delete_x(data, i) {
     let filtered_items = data.filter((el, index) => {
@@ -130,5 +245,31 @@
     console.log("filtered_items:", filtered_items);
     localStorage.setItem("cartItems", JSON.stringify(filtered_items));
     displayTable(filtered_items);
+    let pay_div = document.createElement("div");
+    pay_div.className = "paymentbar";
+    pay_div.style.display = "flex";
+    pay_div.style.justifyContent = "right";
+    pay_div.style.alignItems = "center";
+    pay_div.style.width = "100%";
+    pay_div.style.height = "50px";
+    // pay_div.style.background = "yellow";
+    let order = document.createElement("button");
+    order.innerText = "PLACE ORDER";
+    order.style.marginRight = "1%";
+
+    pay_div.append(order);
+
+    order.style.padding = "5px";
+    order.style.width = "20%";
+    order.style.fontWeight = "bold";
+    order.style.background = "black";
+    order.style.color = "white";
+    order.addEventListener("click", () => {
+      alert("Order Placed Successfully");
+      setTimeout(function () {
+        alert("Your Order will be delivered in 4days");
+      }, 3000);
+    });
+    document.querySelector("#cart-section").append(pay_div);
   }
 </script>
