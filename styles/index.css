@@ -64,8 +64,8 @@ body {
   margin-bottom: 3px;
 }
 #mainbar > input {
-  background-color: antiquewhite; 
-  padding:40px 0px;
+  background-color: antiquewhite;
+  padding: 40px 0px;
 }
 #mainbar > input {
   padding: 2px;
@@ -96,10 +96,8 @@ body {
   border: 0px solid red;
   width: 200px;
   height: 30px;
-  
- 
-  font-weight: bold;
 
+  font-weight: bold;
 }
 #logo {
   margin: 0px;
@@ -107,7 +105,7 @@ body {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
- 
+
   line-height: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -201,7 +199,6 @@ section {
 }
 
 .swiper-slide > div:hover {
-
   text-decoration: underline;
   cursor: pointer;
 }
@@ -375,4 +372,11 @@ section {
 }
 #crousel-Item img {
   width: 240px;
+}
+
+#last_car > div {
+  transform: scale(1.05);
+}
+#last_car>div>div{
+  transform: scale(1);
 }
