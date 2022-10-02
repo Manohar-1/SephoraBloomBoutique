@@ -15,7 +15,14 @@ document.querySelector("#createAccount").addEventListener("click", () => {
 });
 
 document.querySelector("#signIn").addEventListener("click", () => {
-  sitogglePopup();
+  sitogglePopup();   
+  alert('You have signed in successfully...!');  
+  document.querySelector(".container").style.opacity = "1";
+  document.querySelector(".new_container").style.opacity = "1";
+  document.querySelector("#contentdd").style.opacity = "1";
+  document.querySelector("#contentdd").style.opacity = "1";
+  document.querySelector(".container3").style.opacity = "1"; //container3
+  document.querySelector(".container4").style.opacity = "1";
   let name = document.querySelector("#l_password").value;
   document.querySelector("#details").innerText = `Welcome ${name}...!`;
 });
@@ -76,8 +83,10 @@ document.querySelector("#offerbar>p>b").addEventListener("click", function () {
 });
 
 document.querySelector("#signUpButton").addEventListener("click", function () {
-  console.log("Iworking");
-  sutogglePopup();
+ 
+  sutogglePopup(); 
+  alert('You have signed up successfully');   
+  sitogglePopup();
 });
 
 var swiper = new Swiper(".card_slider", {
