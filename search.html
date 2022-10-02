@@ -1,120 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search-Sephora</title>
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="icon" href="https://images.agoramedia.com/wte3.0/gcms/retailer-icons/Sephora.svg"/>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-    <link rel="stylesheet" href="styles/index.css" />
+    <!-- <div> <input id="searchBox" type="text" placeholder="search"></div> -->
+    <nav>
+      <div id="pinkBar">
+          <p>Score up to 50% off‡ on hair-care favorites until 10/10. <span>SHOP NOW▸</span> Free shipping for Beauty Insiders† Exclusions/terms apply. <span id="seeDetailsText">SEE DETAILS▸</span></p>
+          <div class="popup" id="popup-1">
+              <div class="overlay"></div>
+              <div class="content">
+                <div class="close-btn" >&times;</div>
+                <p>
+                  <img src="https://www.sephora.com/contentimages/homepage/042622/Homepage/DesktopMweb/2022-05-04-hp-persistent-banner-modal-overlay-oh-hair-yeah-us-desktop-mobile-slice.jpeg?imwidth=2112" alt="">
+                  <span>Bestselling products from your favorite brands—don’t miss these deals! <br>
+                      <span >Now through 10/10.</span> <br><br></span>
+                  
+                 <span id="lastword">
+                  †We offer <b>FREE</b> Standard 1-3 Day Shipping on all US and Canada
+                  merchandise orders for Beauty Insider members, no minimum purchase
+                  required. Guest checkout orders receive FREE standard 1–3 day
+                  shipping with $50 minimum purchase. The standard shipping benefit is
+                  not valid on international shipping or on Kohls.com. 
+                  <br>
+                  <br>
+                  You must check out with a valid Beauty Insider account to receive
+                  the standard shipping Benefit. Benefit has no cash value. No
+                  adjustments on previous purchases. Benefit is non-transferable.
+                  Benefit subject to change, alteration, or termination by Sephora in
+                  its sole discretion at any time. 
 
-    <link rel="stylesheet" href="styles/search.css" />
+                  <br>
+                  <br>
+                  Not a Beauty Insider?
+                  <a href="">Sign Up Now.</a></span>
+                </p>
+              </div>
+          </div>
+      </div>
+      <div id="whiteBar">
+          <div id="brandname">SEPHORA</div>
+          <div><input type="text" name="" id="searchBox" placeholder="Serch here"></div>
+          <div>
+              <img src="https://www.sephora.com/img/ufe/icons/stores-active.svg" alt="">
+              <p>Stores & Services</p>
+              <p id="chooseStore"> Choose Your Store</p>
+          </div>
+          <div>
+              <img src="https://www.sephora.com/img/ufe/icons/community-active.svg" alt="">
+              <p>Community</p>
+          </div>
+          <div id="signInKaButton">
+              <img src="https://www.pngrepo.com/png/147014/60/woman.png" alt="">
+              <p id="signInKaButtonKaText">Sign In</p>
+              <p id="signInText"> For Free Shipping&#128666</p>
+          </div>
+          <div>
+              <p>
+                  <i class="fa-solid fa-message"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i id="goToCartPage" class="fa-solid fa-cart-shopping"></i>
+              </p>
+          </div>
+      </div>
+      <div class="supopup" id="supopup-1">
+          <div class="suoverlay"></div>
+          <div class="sucontent">
+            <div class="suclose-btn">&times;</div>
+            <h3>Create an Account</h3>
+            <h2>Beauty INSIDER</h2>
+            <p>
+              Join the Beauty Insider loyalty program. Earn points, get
+              <b>FREE standard shipping</b>,redeem rewards, and more.
+            </p>
+            <input type="text" id="name" placeholder="Name" />
+            <input type="email" id="email" placeholder="Email Address" />
+            <input type="text" id="username" placeholder="Username" />
+            <input type="text"id="password"placeholder="Password(minimum 8 characters, should include 1 special character)"/>
+            <input type="tel" id="phnumber" placeholder="Phone Number" />
+            <p>
+              <b>NOTE:</b>Enter your birthdate to receive a free gift every year.
+            </p>
+            <input type="date" />
+            
+            <input type="text" id="desc" placeholder="Description" />
+            <button id="signUpButton">Join Now</button>
+          </div>
+          </div>
 
-    <link rel="stylesheet" href="styles/search.css" />
-    <link rel="stylesheet" href="styles/index.css" />
 
-    <link rel="stylesheet" href="styles/popup.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <script
-      src="https://kit.fontawesome.com/24c494a6b6.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="icon"
-      href="https://images.agoramedia.com/wte3.0/gcms/retailer-icons/Sephora.svg"
-    />
-  </head>
-  <body>
-    <div id="navbar"></div>
-    <!-- <div><input id="searchBox" type="text" placeholder="search" /></div> -->
 
-    <img
-      id="sephoraImage"
-      src="https://pubsaf.global.ssl.fastly.net/prmt/3008ff1940f3e81518954fb1c8f3e3b0"
-      alt=""
-    />
+
+
+          <div class="sipopup" id="sipopup-1">
+              <div class="sioverlay"></div>
+              <div class="sicontent">
+                <div class="siclose-btn">&times;</div>
+                <h2>Sign In</h2>
+                <p>
+                  Sign in or create an account to enjoy <b>FREE standard shipping</b> on
+                  all orders.
+                </p>
+                <input id="l_username" type="text" placeholder="Username*" />
+                <input id="l_password" type="password" placeholder="Password*" />
+                <button id="signIn">Sign In</button>
+                <p><b>New to Sephora?</b></p>
+                <button id="createAccount">Create Account</button>
+                <p id="terms">Terms of Use & Privacy Policy</p>
+              </div>
+            </div>
+
+
+      <div id="blackBar">
+          <p> New</p>
+          <p> Brands</p>
+          <p> Makeup</p>
+          <p> Skincare</p>
+          <p> Hair</p>
+          <p> Fragrance</p>
+          <p> Tools & Brushes</p>
+          <p> Bath & Body</p>
+          <p> Mini Size</p>
+          <p> Gifts</p>
+          <p> Beauty Under $20</p>
+          <p > Sale & Offers</p>
+      </div>
+  </nav>
+  <div id="toShowCartQuentity">0</div>
+    <img id="sephoraImage" src="https://pubsaf.global.ssl.fastly.net/prmt/3008ff1940f3e81518954fb1c8f3e3b0" alt="">
     <div id="ActiveDiv">
-      <h4 id="productLength"></h4>
-      <select id="filter">
-        <option value="">Sort by</option>
-        <option value="Sort-Ih">Price Low to High</option>
-        <option value="High">Price High to Low</option>
-      </select>
+        <h4 id="productLength"></h4>
+        <select id="filter">
+            <option value="">Sort by</option>
+            <option value="Sort-Ih">Price Low to High</option>
+            <option value="High">Price High to Low</option>
+        </select>
     </div>
+   
+   <div id="mainDiv">
+            <div id="leftbar">
+                    <h2 id="SearchResults"></h2>
+                    <p id="makeup"></p>
+                    <p id="gift"></p>
+                    <p id="Clean"></p>
+                    <p id="skincare"></p>
+                    <p id="MiniSize"></p>
+                    <div class="dropdown">
+                        <div class="mainDiv">
+                            <h3>Brand</h3>
+                            <svg width="15" height="10" viewbox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="subDiv">
+                            <p id="pTag0">alva</p>
+                            <p id="pTag1">annabelle</p>
+                            <p id="pTag2">benefit</p>
+                            <p id="pTag3">cargo cosmetics</p>
+                            <p id="pTag4">colourpop</p>
+                            <p id="pTag5">cover girl</p>
+                            <p id="pTag6">l'oreal</p>
+                            <p id="pTag7">lotus cosmetics usa</p>
+                            <p id="pTag8">maybelline</p>
+                            <p id="pTag9">rejuva minerals</p>
+                            <p id="pTag10">wet n wild</p>
+                
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="mainDiv">
+                            <h3>Product Category</h3>
+                            <svg width="15" height="10" viewbox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="subDiv">
+                            <p id="pTag11">Blush</p>
+                            <p id="pTag12">Bronzer</p>
+                            <p id="pTag13">Eyebrow</p>
+                            <p id="pTag14">Eyeliner</p>
+                            <p id="pTag15">Eyeshadow</p>
+                            <p id="pTag16">Foundation</p>
+                            <p id="pTag17">Lip liner</p>
+                            <p id="pTag18">Lipstick</p>
+                            <p id="pTag19">Mascara</p>
+                            <p id="pTag20">Nail polish</p>
+                        </div>
+                    </div>
+            </div>
+            <div id="container">
+                <img id="loader" src="https://media1.giphy.com/media/VHqOcnzGb27XuCgZxB/giphy.gif?cid=790b76110661156990afaeb5509d843b08cf09d837b6edf0&rid=giphy.gif&ct=g" alt="">
+            </div>
+   </div>
 
-    <div id="mainDiv">
-      <div id="leftbar">
-        <h2 id="SearchResults"></h2>
-        <p id="makeup"></p>
-        <p id="gift"></p>
-        <p id="Clean"></p>
-        <p id="skincare"></p>
-        <p id="MiniSize"></p>
-        <div class="dropdown">
-          <div class="mainDiv">
-            <h3>Brand</h3>
-            <svg width="15" height="10" viewbox="0 0 42 25">
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="7"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="subDiv">
-            <p id="pTag0">alva</p>
-            <p id="pTag1">annabelle</p>
-            <p id="pTag2">benefit</p>
-            <p id="pTag3">cargo cosmetics</p>
-            <p id="pTag4">colourpop</p>
-            <p id="pTag5">cover girl</p>
-            <p id="pTag6">l'oreal</p>
-            <p id="pTag7">lotus cosmetics usa</p>
-            <p id="pTag8">maybelline</p>
-            <p id="pTag9">rejuva minerals</p>
-            <p id="pTag10">wet n wild</p>
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="mainDiv">
-            <h3>Product Category</h3>
-            <svg width="15" height="10" viewbox="0 0 42 25">
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="7"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="subDiv">
-            <p id="pTag11">Blush</p>
-            <p id="pTag12">Bronzer</p>
-            <p id="pTag13">Eyebrow</p>
-            <p id="pTag14">Eyeliner</p>
-            <p id="pTag15">Eyeshadow</p>
-            <p id="pTag16">Foundation</p>
-            <p id="pTag17">Lip liner</p>
-            <p id="pTag18">Lipstick</p>
-            <p id="pTag19">Mascara</p>
-            <p id="pTag20">Nail polish</p>
-          </div>
-        </div>
-      </div>
-      <div id="container">
-        <img
-          id="loader"
-          src="https://media1.giphy.com/media/VHqOcnzGb27XuCgZxB/giphy.gif?cid=790b76110661156990afaeb5509d843b08cf09d837b6edf0&rid=giphy.gif&ct=g"
-          alt=""
-        />
-      </div>
-    </div>
 
-    <footer></footer>
-  </body>
+
+
+</body>
 </html>
-
-<script type="module" src="scripts/search.js"></script>
-<script src="./scripts/signinsearch.js"></script>
-<script type="module" src="./scripts/footer.js"></script>
+<script src="scripts/search.js"></script>
