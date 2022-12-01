@@ -48,7 +48,7 @@ document
 
 setTimeout(() => {
   sitogglePopup();
-}, 20000);
+}, 3000);
 
 document.querySelector(".siclose-btn").addEventListener("click", () => {
   document.getElementById("sipopup-1").classList.toggle("active");
